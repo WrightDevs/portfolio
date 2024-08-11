@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+    .services{
+    position: absolute;
+    top:  0%;
+    left: 40%;
+}
+#servimg{
+    display: block;
+}
+.service{
+    position: absolute;
+    bottom: -2%;
+    width: 50%;
+    margin: 0 30px;
+    background-color: #fff6f6;
+    /* padding: 20px; */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px gray;
+}
+.service img{ 
+width: 80px;
+margin-bottom: 10px;
+}
+
+#serv1{
+    height: 35%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+#serv2{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    height: 40%;
+}
+
+#serv3{
+    width: 50%;
+    height: 35%;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+}
+@media(max-width:430px){
+    p{
+        font-size: 13px;
+        font-weight: 900;
+    }
+}
+@media(height<=600px){
+#serv1{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+#serv2{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: 50%;
+}
+
+#serv3{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+}
+</style>
+<body>
+    <section id="section--1">
+        <h3 id="section--1" class="services"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Services</h3>
+    <div class="service-grid">
+    <div class="service" id="serv1">
+    <img id="servimg" src="icons/web dev (1).jpeg" width="50" alt="services">
+    <h3>Web Development</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perspiciatis. Inventore aspernatur dolore cum officiis vitae, ducimus dolorum labore iure, odit unde fugit veritatis, alias nesciunt velit molestiae consequatur a.</p>
+    </div>
+    <div class="service"    id="serv2">
+        <img id="servimg" src="icons/web dev (2).jpeg" width="50" alt="services">
+        <h3>Web Management</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quibusdam nostrum sint perferendis voluptatum alias ex beatae consequuntur, tempore velit saepe voluptates minima quia! Consectetur consequuntur aperiam voluptatem quos perspiciatis!</p>
+    </div>
+    <div class="service" id="serv3">
+        <img id="servimg" src="icons/web dev (3).jpeg" width="50" alt="services">
+        <h3>Web Modifications</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas sunt cumque unde, magnam recusandae et inventore dolore nemo vel quod non ex provident voluptatum quidem esse, reiciendis neque eveniet?</p>
+    </div>
+    </div>
+    </section>
+</body>
+</html>
