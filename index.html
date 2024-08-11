@@ -1,0 +1,138 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsivenav.css">
+    <link rel="shortcut icon" href="digital.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="digital.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <!-- <meta http-equiv="refresh" content="0; url=http://hola.com"> -->
+     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Responsive NavBar</title>
+</head>
+<body ondblclick="hideSideBar()">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0"><symbol id="icon-e9633646f45121eab610a3d30c929019" viewBox="0 0 40 40"><path d="M24.9,21.9c0.2,0,0.9,0.3,2.1,1c1.2,0.6,1.9,1,1.9,1.1c0,0.1,0,0.2,0,0.3c0,0.5-0.1,1-0.4,1.6c-0.2,0.6-0.7,1-1.5,1.4 s-1.5,0.6-2.2,0.6c-0.8,0-2.2-0.4-4.1-1.3c-1.4-0.7-2.6-1.5-3.7-2.6c-1-1.1-2.1-2.4-3.2-4c-1-1.5-1.6-3-1.5-4.2v-0.2 c0-1.3,0.6-2.5,1.6-3.4c0.3-0.3,0.7-0.5,1.1-0.5c0.1,0,0.2,0,0.4,0c0.2,0,0.3,0,0.4,0c0.3,0,0.5,0,0.6,0.1c0.1,0.1,0.2,0.3,0.3,0.6 c0.1,0.3,0.4,0.9,0.7,1.9S18,16,18,16.1c0,0.3-0.2,0.7-0.7,1.2c-0.5,0.5-0.7,0.9-0.7,1c0,0.1,0,0.2,0.1,0.3c0.5,1.1,1.2,2,2.2,3 c0.8,0.8,1.9,1.5,3.3,2.2c0.2,0.1,0.3,0.2,0.5,0.2c0.2,0,0.6-0.4,1.2-1.1S24.7,21.9,24.9,21.9L24.9,21.9z M20.5,33.4 c1.8,0,3.6-0.4,5.3-1.1c1.7-0.7,3.1-1.7,4.4-2.9c1.2-1.2,2.2-2.7,2.9-4.4c0.7-1.7,1.1-3.4,1.1-5.3c0-1.8-0.4-3.6-1.1-5.3 c-0.7-1.7-1.7-3.1-2.9-4.4s-2.7-2.2-4.4-2.9s-3.4-1.1-5.3-1.1c-1.8,0-3.6,0.4-5.3,1.1s-3.1,1.7-4.4,2.9c-1.2,1.2-2.2,2.7-2.9,4.4 c-0.7,1.7-1.1,3.4-1.1,5.3c0,2.9,0.9,5.6,2.6,8l-1.7,5.1l5.3-1.7C15.3,32.6,17.8,33.4,20.5,33.4z M20.5,3.4c2.2,0,4.3,0.4,6.3,1.3 s3.8,2,5.2,3.5c1.5,1.5,2.6,3.2,3.5,5.2c0.9,2,1.3,4.1,1.3,6.3c0,2.2-0.4,4.3-1.3,6.3s-2,3.8-3.5,5.2c-1.5,1.5-3.2,2.6-5.2,3.5 s-4.1,1.3-6.3,1.3c-2.8,0-5.5-0.7-7.9-2L3.5,37l3-8.8c-1.6-2.6-2.3-5.4-2.3-8.4c0-2.2,0.4-4.3,1.3-6.3s2-3.8,3.5-5.2 s3.2-2.6,5.2-3.5S18.2,3.4,20.5,3.4z"/></symbol><symbol id="icon-85976685de3e4af37529a1ce5d57d2a7" viewBox="0 0 40 40"><path d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z"/><path d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z"/><path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z"/></symbol><symbol id="icon-a1eb5cac0cee3b05a40d856c98ce14a5" viewBox="0 0 40 40"><path d="M27.2,4.7v4.9h-2.9c-1.1,0-1.8,0.2-2.1,0.6c-0.4,0.5-0.6,1.1-0.6,2v3.5H27l-0.7,5.4h-4.7v14H16v-14h-4.7v-5.4H16v-4.1 c0-2.3,0.6-4.1,1.9-5.3s2.9-1.9,5.2-1.9C24.8,4.4,26.2,4.5,27.2,4.7L27.2,4.7z"/></symbol><symbol id="icon-bf393d6ea48a4e69e1ed58a3563b94a5" viewBox="0 0 40 40"><path d="M12.1,13.8v19.1H5.7V13.8C5.7,13.8,12.1,13.8,12.1,13.8z M12.5,7.9c0,0.9-0.3,1.7-1,2.4c-0.7,0.6-1.5,0.9-2.6,0.9h0 c-1.1,0-1.9-0.3-2.5-0.9c-0.6-0.6-1-1.4-1-2.4c0-1,0.3-1.7,1-2.4S7.9,4.6,9,4.6s1.9,0.3,2.6,0.9S12.5,6.9,12.5,7.9z M35,22v11h-6.4 V22.7c0-1.4-0.3-2.4-0.8-3.2c-0.5-0.8-1.3-1.1-2.4-1.1c-0.8,0-1.5,0.2-2,0.7c-0.5,0.4-1,1-1.2,1.7c-0.1,0.4-0.2,0.9-0.2,1.6v10.7 h-6.4c0-5.1,0-9.3,0-12.5s0-5.1,0-5.7l0-0.9H22v2.8h0c0.3-0.4,0.5-0.8,0.8-1.1c0.3-0.3,0.6-0.6,1.1-1c0.5-0.4,1-0.6,1.7-0.8 c0.7-0.2,1.4-0.3,2.2-0.3c2.2,0,4,0.7,5.3,2.2C34.4,17,35,19.1,35,22L35,22z"/></symbol><symbol id="icon-0c4db87eff374f0f1ef47f8f043f0132" viewBox="0 0 40 40"><path d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z"/></symbol><symbol id="icon-c3c8e1063e3b7f84f6b54712741de139" viewBox="0 0 40 40"><path d="M37.3,15.3v15.3c0,0.8-0.3,1.6-0.9,2.2c-0.6,0.6-1.4,0.9-2.2,0.9H5.8c-0.8,0-1.6-0.3-2.2-0.9s-0.9-1.4-0.9-2.2V15.3 c0.5,0.6,1.2,1.1,2,1.7c4.7,3.1,7.9,5.4,9.6,6.7c0.7,0.5,1.4,0.9,1.8,1.2c0.4,0.3,1,0.6,1.9,0.9c0.7,0.3,1.5,0.5,2.1,0.5l0,0 c0.6,0,1.4-0.2,2.1-0.5c0.7-0.3,1.4-0.6,1.9-0.9c0.4-0.3,1-0.7,1.8-1.2c2.2-1.6,5.4-3.8,9.6-6.7C36.1,16.5,36.7,15.9,37.3,15.3 L37.3,15.3z M37.3,9.6c0,1-0.3,2-0.9,2.9c-0.6,0.9-1.5,1.8-2.4,2.4c-4.9,3.3-7.9,5.4-9,6.2c-0.1,0.1-0.4,0.3-0.8,0.6 c-0.4,0.3-0.7,0.5-1,0.7c-0.3,0.2-0.6,0.4-1,0.6c-0.4,0.2-0.7,0.4-1.1,0.5c-0.4,0.1-0.6,0.2-0.9,0.2l0,0c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.7-0.3-1.1-0.5c-0.4-0.2-0.7-0.4-1-0.6c-0.3-0.2-0.6-0.4-1-0.7c-0.4-0.3-0.7-0.5-0.8-0.6c-1.1-0.8-2.8-2-5.1-3.5 c-2.3-1.6-3.3-2.4-3.7-2.7c-0.8-0.5-1.6-1.2-2.3-2.2s-1-1.9-1-2.6c0-1,0.3-1.9,0.8-2.5c0.5-0.6,1.2-1,2.3-1h28.4 c0.8,0,1.6,0.3,2.2,0.9C37.1,8.1,37.3,8.8,37.3,9.6L37.3,9.6z"/></symbol></svg>
+    <!-- <div class="image-grid">
+    <div class="img1">
+        <img src="user-3.jpg" width="100">
+
+    </div>
+    </div> -->
+    <div class="sec1">
+    <section id="section--3">
+        <h3 id="section--3">About</h3>
+    </section>
+</div>
+<h3 class="subtitle">Front-End Developer</h3>
+<div class="sec1--txt">
+  <p>I'm Ndubuisi Righteous a Junior Frontend Developer with 2 years of experience in web development,
+    <br>
+    in creating usercentric interfaces and optimizing web performance. 
+    <br>
+    Proficient in JavaScript, HTML, and CSS, with hands-on
+  front-end development tools . 
+  <br>
+  Demonstrated ability to translate complex designs into functional, responsive
+  web components. 
+  <br>
+  Adept at leading teams and collaborating across departments to deliver high-quality
+  software solutions.
+  
+</div>
+<!-- <ul id="icons01" class="style1">
+<svg><a href="ww"><use xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use></a></svg>
+<svg><use xlink:href="#icon-a1eb5cac0cee3b05a40d856c98ce14a5"></use></svg>
+<svg><use xlink:href="#icon-bf393d6ea48a4e69e1ed58a3563b94a5"></use></svg>
+<svg><use xlink:href="#icon-0c4db87eff374f0f1ef47f8f043f0132"></use></svg>
+<svg><use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use></svg>
+</ul> -->
+
+<section id="section--1">
+    <h3 id="section--1" class="services"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Services</h3>
+<div class="service-grid">
+<div class="service" id="serv1">
+<img id="servimg" src="icons/web dev (1).jpeg" width="50" alt="services">
+<h3>Web Development</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perspiciatis. Inventore aspernatur dolore cum officiis vitae, ducimus dolorum labore iure, odit unde fugit veritatis, alias nesciunt velit molestiae consequatur a.</p>
+</div>
+<div class="service" id="serv2">
+    <img id="servimg" src="icons/web dev (2).jpeg" width="50" alt="services">
+    <h3>Web Management</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quibusdam nostrum sint perferendis voluptatum alias ex beatae consequuntur, tempore velit saepe voluptates minima quia! Consectetur consequuntur aperiam voluptatem quos perspiciatis!</p>
+</div>
+<div class="service" id="serv3">
+    <img id="servimg" src="icons/web dev (3).jpeg" width="50" alt="services">
+    <h3>Web Modifications</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptas sunt cumque unde, magnam recusandae et inventore dolore nemo vel quod non ex provident voluptatum quidem esse, reiciendis neque eveniet?</p>
+</div>
+</div>
+</section>
+<div class="icon-grid">
+<div class="side-svg">
+<a href="#"><svg id="whatsapp-svg"><use xlink:href="#icon-e9633646f45121eab610a3d30c929019"></use></svg></li></a>
+</div>
+<div class="side-svg">
+  <svg id="mail-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="24" style="margin-bottom: 10px;">
+    <path d="M502.3 190.8L327.4 338.1c-23.2 20.3-60.6 20.3-83.8 0L9.7 190.8C3.6 186.6 0 179.3 0 171.5V456c0 30.9 25.1 56 56 56h400c30.9 0 56-25.1 56-56V171.5c0-7.8-3.6-15.1-9.7-19.3zM512 120v-16c0-30.9-25.1-56-56-56H56c-30.9 0-56 25.1-56 56v16c0 7.8 3.6 15.1 9.7 19.3L256 325.4l246.3-186.1c6.1-4.3 9.7-11.5 9.7-19.3z"/>
+  </svg>
+</div>
+<div class="side-svg">
+  <a href="#"><svg id="twitter-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="24" style="margin-bottom: 10px;">
+    <path d="M512 97.2c-19 8.4-39.6 14-61.1 16.5 22-13.2 38.9-34.1 46.9-59.1-20.6 12.3-43.5 21.2-67.9 26-19.5-20.8-47.1-33.8-77.7-33.8-58.9 0-106.6 47.7-106.6 106.6 0 8.3 1 16.3 2.8 24C135.3 188 71.8 140.1 34.7 75.5c-9.1 15.6-14.3 33.7-14.3 53 0 36.5 18.6 68.8 46.8 87.6-17.2-.6-33.4-5.3-47.6-13.1v1.3c0 51 36.3 93.4 84.6 103-8.8 2.4-18 3.7-27.5 3.7-6.7 0-13.2-.6-19.6-1.8 13.3 41.5 51.9 71.8 97.6 72.7-35.7 28-80.8 44.7-129.8 44.7-8.4 0-16.8-.5-25-1.4C45.7 443.5 100 461 159 461c190.7 0 295.1-158 295.1-295.1 0-4.5-.1-9-.3-13.5 20.3-14.6 38-32.9 52-53.8z"/>
+  </svg></a>
+</div>
+</div>
+<div class="modal hidden">
+    <h2 class="modal__header">
+      Hire the best Freelancer <br />
+      for your <span class="highlight">site</span>
+    </h2>
+      <!-- <svg class=".btn--close-modal" xmlns="http://www.w3.org/2000/svg" onclick="closemodal()" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> -->
+<svg class="closemodal" onclick="hide()" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      <form class="modal__form">
+      <label>First Name</label>
+      <input type="text" required/>
+      <label>Last Name</label>
+      <input type="text" required/>
+      <label>Email Address</label>
+      <input type="email"  required/>
+      <label>des</label>
+      <textarea name="" id="" rows="5" placeholder="Maximum of 100 characters" maxlength="400" required></textarea>
+      <button class="btn">Submit &checkmark;</button>
+    </form>
+  </div>
+<nav>
+    <ul class="sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="hideSideBar()" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+        <li class="side-links"><a href="#">Home</a></li>
+        <li class="side-links"><a href="#section--1">About</a></li>
+        <li class="side-links"><a href="services.html">Services</a></li>
+        <li class="side-links"><a href="#section--2">Contact Me</a></li>
+        <li><a href="#" class="hire">Hire Me😎</a></li>
+
+    </ul>
+    <ul>
+        <h1 class="header">Portfolio</h1>
+        <li id="hideOnMobile" class="nav-links"><a href="#">Home</a></li>
+        <li id="hideOnMobile" class="nav-links"><a href="#section--1">About</a></li>
+        <li id="hideOnMobile" class="nav-links"><a href="#section--3">Services</a></li>
+        <li id="hideOnMobile" class="nav-links"><a href="#section--3">Contact Me</a></li>
+        <li id="hideOnMobile" class="hire"><a href="#">Hire Me😎</a></li>
+        <li class="menu" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+<div class="foot">
+<footer>
+    <p id = "copyright">&copy;Copyright, Ndubuisi Righteous</p>
+</footer>
+</div>
+<script src="resnav.js"></script>
+</body>
+</html>
